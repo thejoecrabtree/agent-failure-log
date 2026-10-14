@@ -1,6 +1,6 @@
 # Agent failure log: LLM agents running a small physical business
 
-In 2026 I let a team of AI agents run most of Texas Toy Lab, a small family 3D-printing toy business in Texas. They ran a print farm of eight Bambu Lab printers, the online shop, quoting, social media and customer texts, and wrote most of the software in between. This repository records what went wrong, what I changed, and which changes held.
+In 2026 I let a team of AI agents run most of Texas Toy Lab, a small family 3D-printing toy business in Texas. They ran a print farm of ten Bambu Lab printers, the online shop, quoting, social media and customer texts, and wrote most of the software in between. This repository records what went wrong, what I changed, and which changes held.
 
 It is a field log, not a study. Most incidents were small. One damaged a printer, one stopped a real print, and one put a post on the business's public social accounts that no person had approved.
 
