@@ -4,7 +4,7 @@ In 2026 I let a team of AI agents run most of Texas Toy Lab, a small family 3D-p
 
 It is a field log, not a study. Most incidents were small. One damaged a printer, one stopped a real print, and one put a post on the business's public social accounts that no person had approved.
 
-The agents were Claude Code instances (Claude Opus and Sonnet; some were later pointed at a local NVIDIA Nemotron model). The source material is the agents' own incident memos, written to persistent memory after each failure, plus my reviews. Where a memo says "I", that is the agent.
+The agents were Claude Code instances (Claude Opus and Sonnet; most were later moved to a local NVIDIA Nemotron model). The source material is the agents' own incident memos, written to persistent memory after each failure, plus my reviews. Where a memo says "I", that is the agent.
 
 ## The setup
 
@@ -49,7 +49,7 @@ Printer names and hostnames are replaced with letters. Names, keys, internal URL
 
 ## Patterns that held up
 
-**An authority matrix the agents read and cannot edit.** Three columns per area: the agent alone, needs me, never. Agents propose; I edit. The weak point was the code that maps an action onto a row (#15). A generic version is in [`examples/AUTHORITY.example.md`](examples/AUTHORITY.example.md).
+**An authority matrix the agents read and are told not to edit.** Three columns per area: the agent alone, needs me, never. Agents propose; I edit. The weak point was the code that maps an action onto a row (#15). A generic version is in [`examples/AUTHORITY.example.md`](examples/AUTHORITY.example.md).
 
 **Some classes never auto-approve.** Safety, legal, refunds, price changes, new recurring spend and anything over the spending cap are fixed at "always ask". Money, physical and legal questions never resolve by default, and purchases stop at the cart for a person. After #15, every public post needs a person too. The lesson of #15: decide the class from who acts and through which channel, read the whole body for safety words, and never let a keyword match reach "just do it".
 
